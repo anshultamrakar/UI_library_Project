@@ -4,6 +4,7 @@
 .padding-T {
     padding-top: 30px;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -58,6 +59,26 @@ body{
     cursor: pointer;
     transition: all 0.7s;
 }
+
+.navbar li:hover, 
+.navbar li:focus {
+  padding: 1rem;
+}
+
+.navbar li:hover, 
+.navbar li:focus, 
+.navbar li:hover a, 
+.navbar li:focus a  {
+   background-color: #328499;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.navbar li:hover a, 
+.navbar li:focus a {
+  cursor: pointer;
+}
+
 
 main{
     display: grid;
@@ -127,6 +148,11 @@ align-items: center;
 
 }
 
+.card__shadow{
+    box-shadow: 4px 10px;
+    border-radius: 25px;
+}
+
 .upside_btn{
     width: 30px;
     position: absolute;
@@ -164,39 +190,10 @@ a:link, a:visited {
     background-color: red;
   }
 
-.navbar li:hover, 
-.navbar li:focus {
-  padding: 1rem;
-}
 
-/* .navbar li a {
-  color: #fff;
-  text-decoration: none;
-} */
-
-.navbar li:hover, 
-.navbar li:focus, 
-.navbar li:hover a, 
-.navbar li:focus a  {
-   background-color: #328499;
-    border-radius: 10px;
-    color: #fff;
-}
-
-.navbar li:hover a, 
-.navbar li:focus a {
-  cursor: pointer;
-}
-
-.card__shadow{
-    box-shadow: 4px 10px;
-    border-radius: 25px;
-}
 
 
 /* Buttons */
-
-
 
 
 .button__list{
@@ -279,20 +276,35 @@ display: flex;
 
   /* Images */
 
+  .image__section{
+      border: 2px solid black;
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .image__list{
+     gap:40px;
+     padding: 1rem;
+      
+  }
+
   .round__image{
     width: 100px;
+    text-align: center;
     border-radius: 50%;
     border: 1px solid black;
   }
 
   .responsive__img{
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     height: auto;
   }
 
-
-
+/* Inputs */
 
   .searchForm  {
       display: flex;
@@ -303,7 +315,7 @@ display: flex;
   }
 
 
-  .searchForm input{
+  .searchForm input[type = "text"]{
     font-family: 'Open Sans', sans-serif;
     width: 100%;
     min-height: 48px;
@@ -312,7 +324,7 @@ display: flex;
     outline: none;
   }
 
-/* 
+
   .searchForm input[type="password"] {
     font-family: 'Open Sans', sans-serif;
     width: 100%;
@@ -321,7 +333,7 @@ display: flex;
     padding: 0.25rem;
     border-radius: 0.25rem;
     outline: none;
-  } */
+  }
 
   .searchForm input[type="checkbox"] {
     text-align: center;
@@ -371,24 +383,38 @@ display: flex;
 
   /* Navigation */
 
-  .Nav {
-    width: 100%;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+
+  .avatar__section{
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
   }
 
  .avatar{
-    vertical-align: middle;
     width: 50px;
     height: 50px;
     border-radius: 50%;
  }
 
+ .avatar__one{
+   
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+ }
 
+ .avatar__two{
+    width: 150px;
+    height: 150px;
+    border-radius: 150%;
+ }
 
+.avatar__image{
+   margin: 1.5rem;
+}
 
  .alert__box {
     padding: 20px;
@@ -406,10 +432,40 @@ display: flex;
     font-size: 22px;
     line-height: 20px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
   }
   
   /* When moving the mouse over the close button */
   .closebtn:hover {
     color: black;
   }
+
+
+
+
+  .badge__icons{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .checked {
+    color: orange;
+  }
+
+  .rating_section{
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+
+  
+
+  
+  
+
+  
