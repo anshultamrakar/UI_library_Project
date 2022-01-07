@@ -2,6 +2,7 @@
 * Helps you build UI faster
 * Easy to use
 * Easy to customize components
+* Live demo  : https://uilibraryproject.netlify.app/ 
 
 # Using UI-Library
 * Copy the CSS file URL, the javascript code and link in your HTML
